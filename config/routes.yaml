@@ -1,0 +1,5 @@
+post.controllers:
+    resource:
+        path: ../src/Post/Presentation/Api/V1/
+        namespace: App\Post\Presentation\Api\V1
+    type: attribute
