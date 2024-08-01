@@ -6,11 +6,11 @@ namespace App\Post\Application\Command\AddPost;
 
 use App\Post\Domain\Entity\Post;
 use App\Post\Domain\Repository\PostRepositoryWriteInterface;
-use App\Shared\Application\Command\CommandInterface;
+use App\Shared\Application\Command\CommandHandlerInterface;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 
 #[AsMessageHandler]
-final readonly class AddPostCommandHandler implements CommandInterface
+final readonly class AddPostCommandHandler implements CommandHandlerInterface
 {
     public function __construct(
         private PostRepositoryWriteInterface $postRepository,
